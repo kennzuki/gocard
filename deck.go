@@ -27,3 +27,7 @@ func (d deck) print()  {
 		println(i, card)
 	}
 }
+//mulriple return types of dec
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
